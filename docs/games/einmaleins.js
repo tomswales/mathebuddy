@@ -115,7 +115,7 @@ class TimesTableApp extends GameApp {
       <section class="panel question">
         <div class="eyebrow">${q.hole === 'product' ? 'Rechne aus' : 'Finde den fehlenden Faktor'}</div>
         <h2 tabindex="-1">${q.hole === 'product' ? 'Wie viel ist das?' : 'Welche Zahl fehlt?'}</h2>
-        <div class="bigword times-equation" aria-label=${expression.replace('×', 'mal').replace('=', 'gleich').replace('?', 'gesuchte Zahl')}>${expression}</div>
+        <div class="bigword times-equation" aria-label=${expression.replace('×', 'mal').replace('=', 'gleich').replace('?', 'gesuchte Zahl')}><span>${expression}</span></div>
         <form class="answer-form" @submit=${event => this.answer(event)} novalidate>
           <label class="answer-label" for="answer">Deine Antwort<input id="answer" class="answer-input" type="text" inputmode="numeric" autocomplete="off" maxlength="3" ?disabled=${this.solved} aria-describedby="answer-feedback"></label>
           <button class="primary" type="submit" ?disabled=${this.solved}>Prüfen ✓</button>
