@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f4eddd">
+  <meta name="description" content="Entdecke Lernspiele mit Mathebuddy: Mathe-Wörter und das Einmaleins von 1 bis 10. Lerne in deinem Tempo und sammle Sterne.">
+  <title>Mathebuddy · Spiele entdecken</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <main class="catalog">
+    <header><span class="brand">✦ Mathebuddy</span><span class="pill">In deinem Tempo</span></header>
+    <section class="hero">
+      <div class="eyebrow">Entdecken · Üben · Wachsen</div>
+      <h1>Was möchtest<br>du heute lernen?</h1>
+      <p>Wähle dein Abenteuer und lerne spielend dazu.</p>
+      <div class="symbols" aria-hidden="true"><span>+</span><span>−</span><span>×</span><span>÷</span></div>
+    </section>
+    <div id="subjects"></div>
+    <noscript><section class="panel"><h2>Mathematik</h2><p><a href="./games/mathe-woerter.html">Mathe-Wörter</a> · <a href="./games/einmaleins.html">Einmaleins</a></p><p>Bitte aktiviere JavaScript, um zu spielen.</p></section></noscript>
+    <footer class="homeinfo note">Zehn Aufgaben pro Runde. Viele kleine Erfolgserlebnisse.<br>Deine Sterne werden in diesem Browser gespeichert.</footer>
+  </main>
+  <template id="game-card">
+    <a class="panel game-card" href="">
+      <div class="game-icon" aria-hidden="true"></div>
+      <div class="eyebrow"></div>
+      <h3></h3>
+      <p class="game-subtitle"></p>
+      <p class="game-description note"></p>
+      <span class="game-progress small"></span>
+      <span class="game-start">Spielen →</span>
+    </a>
+  </template>
+  <script type="module" src="./assets/index.js"></script>
+</body>
+</html>
